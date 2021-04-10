@@ -6,7 +6,7 @@ const { token } = require('./config');
 const dbd = require('dbd.js');
 const bot = new dbd.Bot({
 	token: process.env.DISCORD_BOT,
-	prefix: '^'
+	prefix: 'prefix'
 });
 
 bot.onMessage();
@@ -30,7 +30,7 @@ for (const files of folders) {
 }
 
 bot.status({
-	text: 'Magic Watching You',
+	text: 'YOUR BOT Watching You',
 	type: 'PLAYING',
 	status: 'online',
 	time: 12
@@ -44,7 +44,7 @@ bot.status({
 });
 
 bot.variables({
-	prefix: '^',
+	prefix: 'your prefix',
 	wchan: '',
 	lchan: '',
 	ticketchannel: '',
